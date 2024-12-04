@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "name": "wisp",
+  "version": "0.0.0",
+  "description": "Simple CSS boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frazier-Software/wisp.git"
+  },
+  "main": "dist/wisp.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "framework"
+  ],
+  "scripts": {
+    "test": "exit 1"
+  },
+  "devDependencies": {}
+}
