@@ -34,11 +34,11 @@ body {
   text-align: center;
 
   .value-prop {
-    width: 30%;
+    flex-grow: 1;
   }
 
   .value-prop + .value-prop {
-    margin-left: 5%;
+    margin-left: 4%;
   }
 
   .value-img {

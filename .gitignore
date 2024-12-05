@@ -110,9 +110,6 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # REPL history
 .node_repl_history
 
-# Compiled output
-dist/
-
 # Dependency directories
 node_modules/
 jspm_packages/
