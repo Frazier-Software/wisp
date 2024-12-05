@@ -1,0 +1,48 @@
+:root {
+  --color-primary: rgb(84, 46, 150);
+  --color-primary-light: rgb(112, 59, 180);
+  --color-primary-dark: rgb(44, 23, 112);
+  --color-primary-transparent: rgba(112, 59, 180, 0.3);
+}
+
+::selection {
+  background: var(--color-primary-transparent);
+}
+
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  max-width: 860px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin: 60px 0 40px 0;
+
+  .header-img {
+    margin-bottom: 40px;
+  }
+}
+
+.value {
+  display: flex;
+  text-align: center;
+
+  .value-prop {
+    width: 30%;
+  }
+
+  .value-prop + .value-prop {
+    margin-left: 5%;
+  }
+
+  .value-img {
+    display: block;
+    margin: 0 auto;
+  }
+}
