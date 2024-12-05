@@ -7,7 +7,7 @@
   <meta name="description" content="Wisp, simple CSS boilerplate.">
   <meta name="author" content="Chris Frazier">
   <meta name="image" content="https://wisp.frazier.software/social.webp">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
   <meta name="og:title" content="Wisp | Simple CSS Boilerplate">
   <meta name="og:description" content="Wisp, simple CSS boilerplate.">
@@ -18,12 +18,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="wisp.css">
-  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="/highlight/github.min.css">
+  <link rel="stylesheet" href="/highlight/copy.min.css">
+  <script src="/highlight/highlight.min.js"></script>
+  <script src="/highlight/copy.min.js"></script>
+
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/wisp.css">
+  <link rel="stylesheet" href="/custom.css">
 </head>
 <body>
-  <a href="https://https://github.com/Frazier-Software/wisp/" class="github-corner" aria-label="View source on GitHub">
+  <!-- Github Corner -->
+  <a href="https://github.com/Frazier-Software/wisp/" class="github-corner" aria-label="View source on GitHub">
     <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true" style="fill:rgb(84, 46, 150); color:#fff; position: absolute; top: 0; border: 0; right: 0;">
       <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
     </svg>
@@ -33,13 +39,15 @@
   </style>
 
   <div class="container">
+    <!-- Header -->
     <header class="header">
       <img class="header-img" src="imgs/wisp.webp" width="318" height="322" alt="Wisp, simple CSS boilerplate.">
       <h2>A dead simple CSS boilerplate.</h2>
       <a class="btn btn--primary btn--ripple" href="#">Download</a>
     </header>
 
-    <div class="value">
+    <!-- Value Props -->
+    <section class="value">
       <div class="value-prop">
         <img class="value-img" src="imgs/feather.svg" alt="Light as a feather at ~400 lines &amp; built with mobile in mind.">
         Light as a feather at ~400 lines &amp; built with mobile in mind.
@@ -52,8 +60,398 @@
         <img class="value-img" src="imgs/watch.svg" alt="Quick to start with zero compiling or installing necessary.">
         Quick to start with zero compiling or installing necessary.
       </div>
-    </div>
+    </section>
+
+    <!-- Is Wisp for you? -->
+    <section class="docs">
+      <h6 class="docs-title">Is Wisp for you?</h6>
+      <p>You should use Wisp if you're embarking on a smaller project or just don't feel like you need all
+        the utility of larger frameworks. Wisp only styles a handful of standard HTML elements, but that's
+        often more than enough to get started. In fact, <u>this site is built on Wisp</u>.</p>
+    </section>
+
+    <!-- Configuration -->
+    <section class="docs">
+      <h6 class="docs-title">Configuration</h6>
+      <p>A lot of the style choices applied by Wisp can be quickly overridden using CSS Variables. Wisp
+        defines the following variables on the <code>:root</code> pseudo-element:</p>
+
+<pre><code class="hljs language-css">/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --color-bg: #FDFDFD;
+  --color-font: #222;
+  --color-font-light: #FFF;
+
+  --color-primary: #1EAEDB;
+  --color-primary-light: #33C3F0;
+  --color-primary-dark: #0FA0CE;
+
+  --color-secondary: #B90E0A;
+  --color-secondary-light: #D21404;
+  --color-secondary-dark: #990F02;
+
+  --color-neutral-1: #F1F1F1;
+  --color-neutral-2: #D1D1D1;
+  --color-neutral-3: #BBB;
+  --color-neutral-4: #888;
+  --color-neutral-5: #555;
+  --color-neutral-6: #333;
+
+  --font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --border-radius: 4px; }
+</code></pre>
+    </section>
+
+    <!-- Typography -->
+    <section class="docs">
+      <h6 class="docs-title">Typography</h6>
+      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively
+        sized based on a single <code>&lt;html&gt;</code> or <code>&lt;body&gt;</code>font-size property. All
+        measurements are base 10, so an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means
+        <code>50px</code>.</p>
+
+      <div class="docs-type">
+        <div class="docs-explain">
+          <p><strong>The typography base</strong> is Helvetica, set at 16rem (16px) over a 1.6 line height (26px).
+            Other type basics like <a href="javscript:false;">anchors</a>, <strong>strong</strong>, <em>emphasis</em>,
+            and <u>underline</u> are all included.<br><span class="docs-footnote">(This page uses Raleway via Google
+            Fonts)</span></p>
+
+          <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>,
+            <code>line-height</code>, and <code>margins</code>.</p>
+        </div>
+
+        <div class="docs-example">
+          <h1>Heading <span><code>&lt;h1&gt;</code> 50rem</span></h1>
+          <h2>Heading <span><code>&lt;h2&gt;</code> 42rem</span></h2>
+          <h3>Heading <span><code>&lt;h3&gt;</code> 36rem</span></h3>
+          <h4>Heading <span><code>&lt;h4&gt;</code> 30rem</span></h4>
+          <h5>Heading <span><code>&lt;h5&gt;</code> 24rem</span></h5>
+          <h6>Heading <span><code>&lt;h6&gt;</code> 16rem</span></h6>
+        </div>
+      </div>
+
+<pre><code class="hljs language-xml"><!-- Standard Headings -->
+<h1>Heading</h1>
+<h2>Heading</h2>
+<h3>Heading</h3>
+<h4>Heading</h4>
+<h5>Heading</h5>
+<h6>Heading</h6>
+
+<!-- Base type size -->
+<p>The base type is 16px over 1.6 line height.</p>
+
+<!-- Other styled text tags -->
+<strong>Bolded</strong>
+<em>Italicized</em>
+<a>Colored</a>
+<u>Underlined</u>
+</code></pre>
+    </section>
+
+    <!-- Buttons -->
+    <section class="docs">
+      <h6 class="docs-title">Buttons</h6>
+      <p>Buttons come in four basic flavors in Wisp. The standard <code>.btn</code> element is
+        plain, whereas the <code>.btn--primary</code> button is vibrant and prominent. The
+        <code>.btn--warning</code> element is a light version of the secondary color, and the
+        <code>.btn--danger</code> element is a bright version of the secondary color. Button
+        styles are applied to a number of appropriate form elements, but can also be arbitrarily
+        attached to anchors with a <code>.btn</code> class.</p>
+
+      <div>
+        <a class="btn" href="#">Anchor button</a>
+        <button>Button element</button>
+        <input type="submit" value="Submit input">
+        <input type="button" value="Button input">
+      </div>
+      <div>
+        <a class="btn btn--primary" href="#">Anchor button</a>
+        <button class="btn--primary">Button element</button>
+        <input class="btn--primary" type="submit" value="Submit input">
+        <input class="btn--primary" type="button" value="Button input">
+      </div>
+      <div>
+        <a class="btn btn--warning" href="#">Anchor button</a>
+        <button class="btn--warning">Button element</button>
+        <input class="btn--warning" type="submit" value="Submit input">
+        <input class="btn--warning" type="button" value="Button input">
+      </div>
+      <div>
+        <a class="btn btn--danger" href="#">Anchor button</a>
+        <button class="btn--danger">Button element</button>
+        <input class="btn--danger" type="submit" value="Submit input">
+        <input class="btn--danger" type="button" value="Button input">
+      </div>
+
+<pre><code class="hljs language-xml"><!-- Standard buttons -->
+<a class="btn" href="#">Anchor button</a>
+<button>Button element</button>
+<input type="submit" value="Submit input">
+<input type="button" value="Button input">
+
+<!-- Primary buttons -->
+<a class="btn btn--primary" href="#">Anchor button</a>
+<button class="btn--primary">Button element</button>
+<input class="btn--primary" type="submit" value="Submit input">
+<input class="btn--primary" type="button" value="Button input">
+
+<!-- Warning buttons -->
+<a class="btn btn--warning" href="#">Anchor button</a>
+<button class="btn--warning">Button element</button>
+<input class="btn--warning" type="submit" value="Submit input">
+<input class="btn--warning" type="button" value="Button input">
+
+<!-- Danger buttons -->
+<a class="btn btn--danger" href="#">Anchor button</a>
+<button class="btn--danger">Button element</button>
+<input class="btn--danger" type="submit" value="Submit input">
+<input class="btn--danger" type="button" value="Button input">
+</code></pre>
+    </section>
+
+    <!-- Toggles -->
+    <section class="docs">
+      <h6 class="docs-title">Toggles</h6>
+      <p>Toggles...</p>
+    </section>
+
+    <!-- Forms -->
+    <section class="docs">
+      <h6 class="docs-title">Forms</h6>
+      <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select,
+        and buttons are normalized for a common height cross-browser so inputs can be stacked or
+        placed alongside each other.</p>
+
+      <form class="docs-form">
+        <label for="exampleEmailInput">Your email</label>
+        <input class="u-full" id="exampleEmailInput" type="email" placeholder="test@mailbox.com">
+
+        <label for="exampleRecipientInput">Reason for contacting</label>
+        <select class="u-full" id="exampleRecipientInput">
+          <option value="Option 1">Option 1</option>
+          <option value="Option 2">Option 2</option>
+          <option value="Option 3">Option 3</option>
+        </select>
+
+        <label for="exampleMessage">Message</label>
+        <textarea class="u-full" id="exampleMessage" placeholder="Hi &hellip;"></textarea>
+
+        <label for="exampleSendCopy">
+          <input type="checkbox" id="exampleSendCopy">
+          <span class="label-body">Send a copy to yourself</span>
+        </label>
+
+        <input class="btn--primary" type="submit" value="Submit">
+      </form>
+
+<pre><code class="hljs language-xml"><!-- The above form looks like this -->
+<!-- NOTE: The class .u-full is just a utility class shorthand for width: 100%; -->
+<form>
+  <label for="exampleEmailInput">Your email</label>
+  <input class="u-full" id="exampleEmailInput" type="email" placeholder="test@mailbox.com">
+
+  <label for="exampleRecipientInput">Reason for contacting</label>
+  <select class="u-full" id="exampleRecipientInput">
+    <option value="Option 1">Option 1</option>
+    <option value="Option 2">Option 2</option>
+    <option value="Option 3">Option 3</option>
+  </select>
+
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full" id="exampleMessage" placeholder="Hi &hellip;"></textarea>
+
+  <label for="exampleSendCopy">
+    <input type="checkbox" id="exampleSendCopy">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+
+  <input class="btn--primary" type="submit" value="Submit">
+</form>
+<!-- NOTE: Always wrap checkbox and radio inputs in a label and use
+  <span class="label-body"> inside of it -->
+</code></pre>
+    </section>
+
+    <!-- Accordion -->
+    <section class="docs">
+      <h6 class="docs-title">Accordion</h6>
+      <p>Accordion...</p>
+    </section>
+
+    <!-- Lists -->
+    <section class="docs">
+      <h6 class="docs-title">Lists</h6>
+      <ul>
+        <li>Unordered lists have basic styles</li>
+        <li>They use the circle list style
+          <ul>
+            <li>Nested lists styled to feel right</li>
+            <li>Can nest either type of list into the other</li>
+          </ul>
+        </li>
+        <li>More list items...</li>
+      </ul>
+      <ol>
+        <li>Ordered lists also have basic styles</li>
+        <li>They use the decimal list style
+          <ul>
+            <li>Ordered and unordered can be nested</li>
+            <li>Can nest either type of list into the other</li>
+          </ul>
+        </li>
+        <li>Another item...</li>
+      </ol>
+    </section>
+
+    <!-- Code -->
+    <section class="docs">
+      <h6 class="docs-title">Code</h6>
+      <p>Code styling is kept basic; just wrap anything in a <code>&lt;code&gt;</code> and it will
+        appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a
+        <code>&lt;pre&gt;</code>.</p>
+
+<pre><code class="docs-code">.some-class {
+  background-color: red;
+}</code></pre>
+
+      <p class="docs-footnote">For syntax highlighting (like you see on this page) check out
+        <a href="https://highlightjs.org/">highlight.js</a></p>
+    </section>
+
+    <!-- Tables -->
+    <section class="docs">
+      <h6 class="docs-title">Tables</h6>
+      <p>Be sure to use properly formatted table markup with <code>&lt;thead&gt;</code> and
+        <code>&lt;tbody&gt;</code> when building a <code>&lt;table&gt;</code>.</p>
+
+      <table class="u-full">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dave Gamache</td>
+            <td>26</td>
+            <td>Male</td>
+            <td>San Francisco</td>
+          </tr>
+          <tr>
+            <td>Dwayne Johnson</td>
+            <td>42</td>
+            <td>Male</td>
+            <td>Hayward</td>
+          </tr>
+        </tbody>
+      </table>
+
+<pre><code class="hljs language-xml"><table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+    </tr>
+  </tbody>
+</table>
+</code></pre>
+    </section>
+
+    <!-- Media Queries -->
+    <section class="docs">
+      <h6 class="docs-title">Media Queries</h6>
+      <p>Wisp uses media queries to adjust typographic settings. The queries are mobile-first,
+        meaning they target <code>min-width</code>. Wisp also provides some <code>display</code>
+        utility classes detailed below. The sizes for the queries are:</p>
+
+<pre><code class="hljs language-css">/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than phablet (sm) */
+@media (min-width: 640px) {}
+
+/* Larger than tablet (md) */
+@media (min-width: 768px) {}
+
+/* Larger than desktop (lg) */
+@media (min-width: 1024px) {}
+
+/* Larger than Desktop HD (xl) */
+@media (min-width: 1280px) {}
+
+/* Extra large (2xl) */
+@media (min-width: 1536px) {}
+</code></pre>
+    </section>
+
+    <!-- Utilities -->
+    <section class="docs">
+      <h6 class="docs-title">Utilities</h6>
+      <p>Wisp includes the following <code>display</code> utility classes:</p>
+      <div class="docs-util">
+        <div class="docs-col">
+          <ul>
+            <li><code>.sm-hide</code>: Hide on screen sizes small and larger.</li>
+            <li><code>.md-hide</code>: Hide on screen sizes medium and larger.</li>
+            <li><code>.lg-hide</code>: Hide on screen sizes large and larger.</li>
+            <li><code>.xl-hide</code>: Hide on screen sizes xl and larger.</li>
+            <li><code>.xxl-hide</code>: Hide on screen sizes 2xl and larger.</li>
+          </ul>
+        </div>
+        <div class="docs-col">
+          <ul>
+            <li><code>.sm-show</code>: Show on screen sizes small and larger.</li>
+            <li><code>.md-show</code>: Show on screen sizes medium and larger.</li>
+            <li><code>.lg-show</code>: Show on screen sizes large and larger.</li>
+            <li><code>.xl-show</code>: Show on screen sizes xl and larger.</li>
+            <li><code>.xxl-show</code>: Show on screen sizes 2xl and larger.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Javascript -->
+    <section class="docs">
+      <h6 class="docs-title">Javascript</h6>
+      <p>Javascript...(ripple, scroll-to-top, tooltips)</p>
+    </section>
   </div>
-  <script src="wisp.js"></script>
+
+  <script src="/wisp.js"></script>
+  <script>
+    document.querySelectorAll(".hljs").forEach(el => {
+      el.innerHTML = el.innerHTML
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    });
+    hljs.addPlugin(new CopyButtonPlugin());
+    hljs.configure({ cssSelector: 'pre code.hljs' });
+    hljs.highlightAll();
+  </script>
 </body>
 </html>

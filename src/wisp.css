@@ -75,7 +75,7 @@ a:hover {
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .btn,
-button,
+button:not(.hljs-copy-button),
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -121,33 +121,33 @@ input[type="button"].btn--primary:hover {
   color: var(--color-font-light);
   background-color: var(--color-primary);
   border-color: var(--color-primary); }
-.btn.btn--cancel,
-button.btn--cancel,
-input[type="submit"].btn--cancel,
-input[type="reset"].btn--cancel,
-input[type="button"].btn--cancel {
+.btn.btn--warning,
+button.btn--warning,
+input[type="submit"].btn--warning,
+input[type="reset"].btn--warning,
+input[type="button"].btn--warning {
   color: var(--color-secondary-light);
   border-color: var(--color-secondary-light); }
-.btn.btn--cancel:hover,
-button.btn--cancel:hover,
-input[type="submit"].btn--cancel:hover,
-input[type="reset"].btn--cancel:hover,
-input[type="button"].btn--cancel:hover {
+.btn.btn--warning:hover,
+button.btn--warning:hover,
+input[type="submit"].btn--warning:hover,
+input[type="reset"].btn--warning:hover,
+input[type="button"].btn--warning:hover {
   color: var(--color-secondary-dark);
   border-color: var(--color-secondary-dark); }
-.btn.btn--secondary,
-button.btn--secondary,
-input[type="submit"].btn--secondary,
-input[type="reset"].btn--secondary,
-input[type="button"].btn--secondary {
+.btn.btn--danger,
+button.btn--danger,
+input[type="submit"].btn--danger,
+input[type="reset"].btn--danger,
+input[type="button"].btn--danger {
   color: var(--color-font-light);
   background: var(--color-secondary-light);
   border-color: var(--color-secondary-light); }
-.btn.btn--secondary:hover,
-button.btn--secondary:hover,
-input[type="submit"].btn--secondary:hover,
-input[type="reset"].btn--secondary:hover,
-input[type="button"].btn--secondary:hover {
+.btn.btn--danger:hover,
+button.btn--danger:hover,
+input[type="submit"].btn--danger:hover,
+input[type="reset"].btn--danger:hover,
+input[type="button"].btn--danger:hover {
   background: var(--color-secondary);
   border-color: var(--color-secondary); }
 
@@ -254,8 +254,8 @@ li {
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
+  padding: 2px 5px;
+  margin: 0 2px;
   font-size: 90%;
   white-space: nowrap;
   background: var(--color-neutral-1);
@@ -263,7 +263,7 @@ code {
   border-radius: var(--border-radius); }
 pre > code {
   display: block;
-  padding: 1rem 1.5rem;
+  padding: 10px 15px;
   white-space: pre; }
 
 
@@ -284,7 +284,7 @@ td:last-child {
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
+button:not(.hljs-copy-button),
 .btn {
   margin-bottom: 1rem; }
 input,
@@ -307,18 +307,18 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin-top: 30px;
+  margin-bottom: 35px;
   border-width: 0;
   border-top: 1px solid var(--color-neutral-2); }
 
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full_width {
+.u-full {
   width: 100%;
   box-sizing: border-box; }
-.u-max_width {
+.u-max {
   max-width: 100%;
   box-sizing: border-box; }
 
@@ -327,16 +327,51 @@ hr {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Larger than phablet (sm) */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+  .sm-hide {
+    display: none !important; }
+}
+@media (max-width: 639px) {
+  .sm-show {
+    display: none !important; }
+}
 
 /* Larger than tablet (md) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .md-hide {
+    display: none !important; }
+}
+@media (max-width: 767px) {
+  .md-show {
+    display: none !important;}
+}
 
 /* Larger than desktop (lg) */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  .lg-hide {
+    display: none !important; }
+}
+@media (max-width: 1023px) {
+  .lg-show {
+    display: none !important;}
+}
 
 /* Larger than Desktop HD (xl) */
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+  .xl-hide {
+    display: none !important; }
+}
+@media (max-width: 1279px) {
+  .xl-show {
+    display: none !important;}
+}
 
 /* Extra large (2xl) */
-@media (min-width: 1536px) {}
+@media (min-width: 1536px) {
+  .xxl-hide {
+    display: none !important; }
+}
+@media (max-width: 1535px) {
+  .xxl-show {
+    display: none !important;}
+}

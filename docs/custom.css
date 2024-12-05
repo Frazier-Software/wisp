@@ -12,6 +12,12 @@
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
+  padding-bottom: 40px;
+}
+
+pre {
+  margin: 0;
+  padding: 20px 0 10px 0;
 }
 
 .container {
@@ -22,27 +28,90 @@ body {
 
 .header {
   text-align: center;
-  margin: 60px 0 40px 0;
+  margin-top: 60px;
 
   .header-img {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 
 .value {
   display: flex;
   text-align: center;
+  margin: 40px 0 60px 0;
 
   .value-prop {
-    flex-grow: 1;
+    width: 30%;
   }
 
   .value-prop + .value-prop {
-    margin-left: 4%;
+    margin-left: 5%;
   }
 
   .value-img {
     display: block;
     margin: 0 auto;
   }
+}
+
+.docs {
+  margin-bottom: 50px;
+
+  .docs-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+  }
+
+  .docs-footnote {
+    font-size: 80%;
+    letter-spacing: normal;
+  }
+
+  .docs-type {
+    display: flex;
+  }
+
+  .docs-explain {
+    width: 56%;
+  }
+
+  .docs-example {
+    width: 42%;
+    margin-left: 2%;
+
+  }
+
+  .docs-example span {
+    font-size: 1.2rem;
+    letter-spacing: normal;
+    color: var(--color-neutral-4);
+  }
+
+  .docs-form {
+    max-width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .docs-code {
+    margin-bottom: 5px;
+  }
+
+  .docs-util {
+    display: flex;
+  }
+
+  .docs-col {
+    width: 49%;
+  }
+
+  .docs-col + .docs-col {
+    margin-left: 2%;
+  }
+}
+
+.docs + .docs {
+  padding-top: 50px;
+  border-top: 1px solid var(--color-neutral-2);
 }
