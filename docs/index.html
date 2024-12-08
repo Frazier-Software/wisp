@@ -41,13 +41,13 @@
   <div class="container">
     <!-- Header -->
     <header class="header">
-      <img class="header-img" src="imgs/wisp.webp" width="318" height="322" alt="Wisp, simple CSS boilerplate.">
+      <img class="header-img" src="imgs/wisp.webp" alt="Wisp, simple CSS boilerplate.">
       <h2>A dead simple CSS boilerplate.</h2>
       <a class="btn btn--primary btn--ripple" href="#">Download</a>
     </header>
 
     <!-- Value Props -->
-    <section class="value">
+    <section class="sm-show value">
       <div class="value-prop">
         <img class="value-img" src="imgs/feather.svg" alt="Light as a feather at ~500 lines &amp; built with mobile in mind.">
         Light as a feather at ~500 lines &amp; built with mobile in mind.
@@ -123,12 +123,12 @@
         </div>
 
         <div class="type_example-demo">
-          <h1>Heading <span><code>&lt;h1&gt;</code> 50rem</span></h1>
-          <h2>Heading <span><code>&lt;h2&gt;</code> 42rem</span></h2>
-          <h3>Heading <span><code>&lt;h3&gt;</code> 36rem</span></h3>
-          <h4>Heading <span><code>&lt;h4&gt;</code> 30rem</span></h4>
-          <h5>Heading <span><code>&lt;h5&gt;</code> 24rem</span></h5>
-          <h6>Heading <span><code>&lt;h6&gt;</code> 16rem</span></h6>
+          <h1>Heading <span class="md-show"><code>&lt;h1&gt;</code> 50rem</span></h1>
+          <h2>Heading <span class="md-show"><code>&lt;h2&gt;</code> 42rem</span></h2>
+          <h3>Heading <span class="md-show"><code>&lt;h3&gt;</code> 36rem</span></h3>
+          <h4>Heading <span class="md-show"><code>&lt;h4&gt;</code> 30rem</span></h4>
+          <h5>Heading <span class="md-show"><code>&lt;h5&gt;</code> 24rem</span></h5>
+          <h6>Heading <span class="md-show"><code>&lt;h6&gt;</code> 16rem</span></h6>
         </div>
       </div>
 
@@ -161,29 +161,41 @@
         styles are applied to a number of appropriate form elements, but can also be arbitrarily
         attached to anchors with a <code>.btn</code> class.</p>
 
-      <div>
-        <a class="btn" href="#">Anchor button</a>
-        <button>Button element</button>
-        <input type="submit" value="Submit input">
-        <input type="button" value="Button input">
+      <div class="md-hide btn_example">
+        <div>
+          <a class="btn" href="#">Anchor button</a>
+          <a class="btn btn--primary" href="#">Anchor button</a>
+        </div>
+        <div>
+          <a class="btn btn--warning" href="#">Anchor button</a>
+          <a class="btn btn--danger" href="#">Anchor button</a>
+        </div>
       </div>
-      <div>
-        <a class="btn btn--primary" href="#">Anchor button</a>
-        <button class="btn--primary">Button element</button>
-        <input class="btn--primary" type="submit" value="Submit input">
-        <input class="btn--primary" type="button" value="Button input">
-      </div>
-      <div>
-        <a class="btn btn--warning" href="#">Anchor button</a>
-        <button class="btn--warning">Button element</button>
-        <input class="btn--warning" type="submit" value="Submit input">
-        <input class="btn--warning" type="button" value="Button input">
-      </div>
-      <div>
-        <a class="btn btn--danger" href="#">Anchor button</a>
-        <button class="btn--danger">Button element</button>
-        <input class="btn--danger" type="submit" value="Submit input">
-        <input class="btn--danger" type="button" value="Button input">
+      <div class="md-show">
+        <div>
+          <a class="btn" href="#">Anchor button</a>
+          <button>Button element</button>
+          <input type="submit" value="Submit input">
+          <input type="button" value="Button input">
+        </div>
+        <div>
+          <a class="btn btn--primary" href="#">Anchor button</a>
+          <button class="btn--primary">Button element</button>
+          <input class="btn--primary" type="submit" value="Submit input">
+          <input class="btn--primary" type="button" value="Button input">
+        </div>
+        <div>
+          <a class="btn btn--warning" href="#">Anchor button</a>
+          <button class="btn--warning">Button element</button>
+          <input class="btn--warning" type="submit" value="Submit input">
+          <input class="btn--warning" type="button" value="Button input">
+        </div>
+        <div>
+          <a class="btn btn--danger" href="#">Anchor button</a>
+          <button class="btn--danger">Button element</button>
+          <input class="btn--danger" type="submit" value="Submit input">
+          <input class="btn--danger" type="button" value="Button input">
+        </div>
       </div>
 
 <pre><code class="hljs language-xml"><!-- Standard buttons -->
@@ -281,7 +293,7 @@
         <span class="toggle" style="font-size: 1.1rem;"><input type="checkbox" id="exampleToggle"></span>
         <span class="toggle" style="font-size: 1.3rem;"><input type="checkbox" id="exampleToggle"></span>
         <span class="toggle" style="font-size: 1.5rem;"><input type="checkbox" id="exampleToggle"></span>
-        <span class="toggle" style="font-size: 1.7rem;"><input type="checkbox" id="exampleToggle"></span>
+        <span class="toggle sm-show" style="font-size: 1.7rem;"><input type="checkbox" id="exampleToggle"></span>
       </p>
 
 <pre><code class="hljs language-xml"><span class="toggle"><input type="checkbox" id="exampleToggle"></span></code></pre>
@@ -519,20 +531,20 @@
       <div class="util_example">
         <div class="util_example-col">
           <ul>
-            <li><code>.sm-hide</code>: Hide on screen sizes small and larger.</li>
-            <li><code>.md-hide</code>: Hide on screen sizes medium and larger.</li>
-            <li><code>.lg-hide</code>: Hide on screen sizes large and larger.</li>
-            <li><code>.xl-hide</code>: Hide on screen sizes xl and larger.</li>
-            <li><code>.xxl-hide</code>: Hide on screen sizes 2xl and larger.</li>
+            <li><code>.sm-hide</code>: Hide on <span class="sm-show">screen sizes </span>small and larger.</li>
+            <li><code>.md-hide</code>: Hide on <span class="sm-show">screen sizes </span>medium and larger.</li>
+            <li><code>.lg-hide</code>: Hide on <span class="sm-show">screen sizes </span>large and larger.</li>
+            <li><code>.xl-hide</code>: Hide on <span class="sm-show">screen sizes </span>xl and larger.</li>
+            <li><code>.xxl-hide</code>: Hide on <span class="sm-show">screen sizes </span>2xl and larger.</li>
           </ul>
         </div>
         <div class="util_example-col">
           <ul>
-            <li><code>.sm-show</code>: Show on screen sizes small and larger.</li>
-            <li><code>.md-show</code>: Show on screen sizes medium and larger.</li>
-            <li><code>.lg-show</code>: Show on screen sizes large and larger.</li>
-            <li><code>.xl-show</code>: Show on screen sizes xl and larger.</li>
-            <li><code>.xxl-show</code>: Show on screen sizes 2xl and larger.</li>
+            <li><code>.sm-show</code>: Show on <span class="sm-show">screen sizes </span>small and larger.</li>
+            <li><code>.md-show</code>: Show on <span class="sm-show">screen sizes </span>medium and larger.</li>
+            <li><code>.lg-show</code>: Show on <span class="sm-show">screen sizes </span>large and larger.</li>
+            <li><code>.xl-show</code>: Show on <span class="sm-show">screen sizes </span>xl and larger.</li>
+            <li><code>.xxl-show</code>: Show on <span class="sm-show">screen sizes </span>2xl and larger.</li>
           </ul>
         </div>
       </div>
@@ -569,7 +581,7 @@
   </div>
 
   <!-- Back to top button -->
-  <a href="#" id="back-to-top"></a>
+  <a class="lg-show" href="#" id="back-to-top"></a>
 
   <script src="/wisp.js"></script>
   <script>
