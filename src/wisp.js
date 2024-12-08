@@ -13,6 +13,23 @@ function createRipple(event) {
   btn.appendChild(ripple);
 }
 
+function handleScroll(btt) {
+  return function () {
+    if (document.documentElement.scrollTop > 300) {
+      btt.classList.add('back-to-top--show');
+    } else {
+      btt.classList.remove('back-to-top--show');
+    }
+  };
+}
+
+function handleClick(event) {
+  event.preventDefault();
+  document.documentElement.scrollIntoView({
+    behavior: 'smooth',
+  });
+}
+
 const ready = cb => {
   if (document.readyState !== 'loading') cb();
   else document.addEventListener('DOMContentLoaded', cb);
@@ -22,4 +39,10 @@ ready(() => {
   document.querySelectorAll('.btn--ripple').forEach(el => {
     el.addEventListener('click', createRipple);
   });
+
+  const btt = document.querySelector('#back-to-top');
+  if (btt) {
+    document.addEventListener('scroll', handleScroll(btt));
+    btt.addEventListener('click', handleClick);
+  }
 });

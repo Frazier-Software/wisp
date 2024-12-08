@@ -114,7 +114,7 @@
       <div class="type_example">
         <div class="type_example-explain">
           <p><strong>The typography base</strong> is Helvetica, set at 16rem (16px) over a 1.6 line height (26px).
-            Other type basics like <a href="javscript:false;">anchors</a>, <strong>strong</strong>, <em>emphasis</em>,
+            Other type basics like <a href="#" onclick="return false">anchors</a>, <strong>strong</strong>, <em>emphasis</em>,
             and <u>underline</u> are all included.<br><span class="docs-footnote">(This page uses Raleway via Google
             Fonts)</span></p>
 
@@ -527,9 +527,24 @@
     <!-- Javascript -->
     <section class="docs">
       <h6 class="docs-title">Javascript</h6>
-      <p>Javascript...(ripple, scroll-to-top, tooltips)</p>
+      <p>You can use the Wisp stylesheet on its own, but some functionality requires including the <code>wisp.js</code>
+        file as well. Specifically, button ripple effects, back-to-top button, and tooltips.</p>
+
+      <ul>
+        <li>Ripple effect: <a class="btn btn--primary btn--ripple u-mb0" href="#" onclick="return false">Ripple button</a></li>
+        <ul>
+          <li>Add <code>.btn .btn--ripple</code> to a button or anchor.</li>
+        </ul>
+        <li>Back-to-top (see page for demo)</li>
+        <ul>
+          <li>Add <code>&lt;a href="#" id="back-to-top"&gt;&lt;/a&gt;</code> to your page.</li>
+        </ul>
+      </ul>
     </section>
   </div>
+
+  <!-- Back to top button -->
+  <a href="#" id="back-to-top"></a>
 
   <script src="/wisp.js"></script>
   <script>
