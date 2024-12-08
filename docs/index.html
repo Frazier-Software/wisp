@@ -471,6 +471,20 @@
 </code></pre>
     </section>
 
+    <!-- Tooltips -->
+    <section class="docs">
+      <h6 class="docs-title">Tooltips</h6>
+      <p>You can add pure CSS
+        <span class="tooltip" data-tip="These tooltips work without any Javascript. They are triggered on hover and focus.">tooltips (hover me)</span>
+        to almost any inline element by adding the <code>.tooltip</code> class and specifying some data via
+        <code>data-tip</code>. The tooltips scale down automatically on small devices, but if you prefer using the
+        <span class="tooltip tooltip--sm" data-tip="This tooltip uses the .tooltip--sm modifier">small size</span>
+        you can force it with the <code>.tooltip--sm</code> modifier.</p>
+<pre><code class="hljs language-xml"><span class="tooltip" data-tip="These tooltips work without any Javascript. They are triggered on hover and focus.">tooltips</span>
+<span class="tooltip tooltip--sm" data-tip="This tooltip uses the .tooltip--sm modifier">small size</span>
+</code></pre>
+    </section>
+
     <!-- Media Queries -->
     <section class="docs">
       <h6 class="docs-title">Media Queries</h6>
@@ -527,8 +541,8 @@
     <!-- Javascript -->
     <section class="docs">
       <h6 class="docs-title">Javascript</h6>
-      <p>You can use the Wisp stylesheet on its own, but some functionality requires including the <code>wisp.js</code>
-        file as well. Specifically, button ripple effects, back-to-top button, and tooltips.</p>
+      <p>You can use the Wisp stylesheet on its own, but there are two features that require including the <code>wisp.js</code>
+        file as well. Specifically, button ripple effects, and the back-to-top button.</p>
 
       <ul>
         <li>Ripple effect: <a class="btn btn--primary btn--ripple u-mb0" href="#" onclick="return false">Ripple button</a></li>
@@ -540,6 +554,17 @@
           <li>Add <code>&lt;a href="#" id="back-to-top"&gt;&lt;/a&gt;</code> to your page.</li>
         </ul>
       </ul>
+    </section>
+
+    <!-- Where is the grid? -->
+    <section class="docs">
+      <h6 class="docs-title">Where's the grid?</h6>
+      <p>Wisp doesn't come with any prebuilt grid or layout helpers like many other CSS frameworks and boilerplates.
+        Modern browsers have powerful <code>display: grid</code> functionality on their own. Even better, theres
+        <code>display: flex</code> to handle all of your layout needs. There are a lot of
+        <a href="https://tobiasahlin.com/blog/common-flexbox-patterns/">great resources</a> out there on
+        <a href="https://tobiasahlin.com/blog/masonry-with-css/">layout strategies</a> with these systems. I
+        recommend you use flexbox or grid styles as needed and not constrain yourself to a prebuilt framework grid.</p>
     </section>
   </div>
 

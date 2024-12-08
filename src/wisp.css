@@ -371,6 +371,63 @@ td:last-child {
   padding-right: 0; }
 
 
+.tooltip {
+  cursor: help;
+  border-bottom: 1px dotted var(--color-neutral-5);
+  position: relative; }
+.tooltip::before,
+.tooltip::after {
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  z-index: -100; }
+.tooltip:hover::before,
+.tooltip:focus::before,
+.tooltip:hover::after,
+.tooltip:focus::after {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  z-index: 100; }
+.tooltip::before {
+  content: "";
+  border-style: solid;
+  border-width: 1em 0.75em 0 0.75em;
+  border-color: var(--color-neutral-6) transparent transparent transparent;
+  bottom: 100%;
+  margin-left: -0.5em;
+  transition: all .65s cubic-bezier(.84, -0.18, 0.31, 1.26), opacity .65s .5s;
+  transform: scale(.6) translateY(-90%); }
+.tooltip:hover::before,
+.tooltip:focus::before {
+  transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s; }
+.tooltip::after {
+  background: var(--color-neutral-6);
+  border-radius: var(--border-radius);
+  bottom: 180%;
+  color: var(--color-font-light);
+  content: attr(data-tip);
+  margin-left: -8.75em;
+  padding: 1em;
+  transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
+  transform: scale(.6) translateY(50%);  
+  font-size: .9em;
+  width: 16em; }
+.tooltip:hover::after,
+.tooltip:focus::after  {
+  transition: all .65s cubic-bezier(.84,-0.18,.31,1.26); }
+.tooltip.tooltip--sm::after {
+  font-size: .75em;
+  margin-left: -5em;
+  width: 10em; }
+
+@media (max-width: 768px) {
+  .tooltip::after {
+    font-size: .75em;
+    margin-left: -5em;
+    width: 10em; }
+}
+
+
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button:not(.hljs-copy-button),
