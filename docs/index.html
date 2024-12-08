@@ -212,12 +212,6 @@
 </code></pre>
     </section>
 
-    <!-- Toggles -->
-    <section class="docs">
-      <h6 class="docs-title">Toggles</h6>
-      <p>Toggles...</p>
-    </section>
-
     <!-- Forms -->
     <section class="docs">
       <h6 class="docs-title">Forms</h6>
@@ -227,20 +221,20 @@
 
       <form class="docs-form">
         <label for="exampleEmailInput">Your email</label>
-        <input class="u-full" id="exampleEmailInput" type="email" placeholder="test@mailbox.com">
+        <input class="u-full" name="exampleEmailInput" type="email" placeholder="test@mailbox.com">
 
         <label for="exampleRecipientInput">Reason for contacting</label>
-        <select class="u-full" id="exampleRecipientInput">
+        <select class="u-full" name="exampleRecipientInput">
           <option value="Option 1">Option 1</option>
           <option value="Option 2">Option 2</option>
           <option value="Option 3">Option 3</option>
         </select>
 
         <label for="exampleMessage">Message</label>
-        <textarea class="u-full" id="exampleMessage" placeholder="Hi &hellip;"></textarea>
+        <textarea class="u-full" name="exampleMessage" placeholder="Hi &hellip;"></textarea>
 
         <label for="exampleSendCopy">
-          <input type="checkbox" id="exampleSendCopy">
+          <input type="checkbox" name="exampleSendCopy">
           <span class="label-body">Send a copy to yourself</span>
         </label>
 
@@ -273,6 +267,24 @@
 <!-- NOTE: Always wrap checkbox and radio inputs in a label and use
   <span class="label-body"> inside of it -->
 </code></pre>
+    </section>
+
+    <!-- Toggles -->
+    <section class="docs">
+      <h6 class="docs-title">Toggles</h6>
+      <p>Wisp includes iOS inspired, pure CSS toggle checkboxes. Wrap any checkbox <code>&lt;input&gt;</code>
+        in a <code>span.toggle</code> to enable the styles. Toggles will scale to 60% of the containers
+        font size. They are <code>display: inline-block</code> elements.</p>
+
+      <p>Examples:
+        <span class="toggle"><input type="checkbox" name="exampleToggle" checked></span>
+        <span class="toggle" style="font-size: 1.1rem;"><input type="checkbox" name="exampleToggle"></span>
+        <span class="toggle" style="font-size: 1.3rem;"><input type="checkbox" name="exampleToggle"></span>
+        <span class="toggle" style="font-size: 1.5rem;"><input type="checkbox" name="exampleToggle"></span>
+        <span class="toggle" style="font-size: 1.7rem;"><input type="checkbox" name="exampleToggle"></span>
+      </p>
+
+<pre><code class="hljs language-xml"><span class="toggle"><input type="checkbox" name="exampleToggle"></span></code></pre>
     </section>
 
     <!-- Accordion -->
