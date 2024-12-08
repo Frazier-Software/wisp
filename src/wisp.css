@@ -24,7 +24,7 @@
   --border-radius: 4px; }
 
 
-/* Base Styles
+/* Base styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
   font-size: 62.5%; }
@@ -229,6 +229,7 @@ input[type="radio"] {
   display: inline; }
 label > .label-body {
   display: inline-block;
+  cursor: pointer;
   margin-left: .5rem;
   font-weight: normal; }
 
@@ -278,6 +279,47 @@ label > .label-body {
   background-color: var(--color-primary-light); }
 .toggle input[type="checkbox"]:checked:before {
   transform: translateX(2.5em); }
+
+
+/* Accordion
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.accordion-tab {
+  border: 1px solid var(--color-neutral-2);
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem; }
+.accordion-tab input {
+  display: none; }
+.accordion-tab label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: 5px 5px 5px 10px;
+  cursor: pointer; }
+.accordion-tab:not(.accordion-tab--close) label::after {
+  content: "\276F";
+  color: var(--color-neutral-5);
+  width: 1em;
+  height: 1em;
+  text-align: center; }
+.accordion-tab:not(.accordion-tab--close) input:checked + label::after {
+  transform: rotate(90deg); }
+.accordion-tab.accordion-tab--close {
+  border: none;
+  margin-top: 12px; }
+.accordion-tab.accordion-tab--close label {
+  font-size: 75%;
+  padding: 0 0 0 10px; }
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 5px 0 10px;
+  transition: max-height 650ms; }
+.accordion-content p {
+  margin-bottom: 10px; }
+.accordion-content p:first-child {
+  margin-top: 15px; }
+.accordion-tab input:checked ~ .accordion-content {
+  max-height: 500rem; }
 
 
 /* Lists

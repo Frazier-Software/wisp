@@ -49,8 +49,8 @@
     <!-- Value Props -->
     <section class="value">
       <div class="value-prop">
-        <img class="value-img" src="imgs/feather.svg" alt="Light as a feather at ~400 lines &amp; built with mobile in mind.">
-        Light as a feather at ~400 lines &amp; built with mobile in mind.
+        <img class="value-img" src="imgs/feather.svg" alt="Light as a feather at ~500 lines &amp; built with mobile in mind.">
+        Light as a feather at ~500 lines &amp; built with mobile in mind.
       </div>
       <div class="value-prop">
         <img class="value-img" src="imgs/pens.svg" alt="Styles designed to be a starting point, not a UI framework.">
@@ -111,8 +111,8 @@
         measurements are base 10, so an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means
         <code>50px</code>.</p>
 
-      <div class="docs-type">
-        <div class="docs-explain">
+      <div class="type_example">
+        <div class="type_example-explain">
           <p><strong>The typography base</strong> is Helvetica, set at 16rem (16px) over a 1.6 line height (26px).
             Other type basics like <a href="javscript:false;">anchors</a>, <strong>strong</strong>, <em>emphasis</em>,
             and <u>underline</u> are all included.<br><span class="docs-footnote">(This page uses Raleway via Google
@@ -122,7 +122,7 @@
             <code>line-height</code>, and <code>margins</code>.</p>
         </div>
 
-        <div class="docs-example">
+        <div class="type_example-demo">
           <h1>Heading <span><code>&lt;h1&gt;</code> 50rem</span></h1>
           <h2>Heading <span><code>&lt;h2&gt;</code> 42rem</span></h2>
           <h3>Heading <span><code>&lt;h3&gt;</code> 36rem</span></h3>
@@ -219,22 +219,22 @@
         and buttons are normalized for a common height cross-browser so inputs can be stacked or
         placed alongside each other.</p>
 
-      <form class="docs-form">
+      <form class="form_example">
         <label for="exampleEmailInput">Your email</label>
-        <input class="u-full" name="exampleEmailInput" type="email" placeholder="test@mailbox.com">
+        <input class="u-full" id="exampleEmailInput" type="email" placeholder="test@mailbox.com">
 
         <label for="exampleRecipientInput">Reason for contacting</label>
-        <select class="u-full" name="exampleRecipientInput">
+        <select class="u-full" id="exampleRecipientInput">
           <option value="Option 1">Option 1</option>
           <option value="Option 2">Option 2</option>
           <option value="Option 3">Option 3</option>
         </select>
 
         <label for="exampleMessage">Message</label>
-        <textarea class="u-full" name="exampleMessage" placeholder="Hi &hellip;"></textarea>
+        <textarea class="u-full" id="exampleMessage" placeholder="Hi &hellip;"></textarea>
 
         <label for="exampleSendCopy">
-          <input type="checkbox" name="exampleSendCopy">
+          <input type="checkbox" id="exampleSendCopy">
           <span class="label-body">Send a copy to yourself</span>
         </label>
 
@@ -277,20 +277,100 @@
         font size. They are <code>display: inline-block</code> elements.</p>
 
       <p>Examples:
-        <span class="toggle"><input type="checkbox" name="exampleToggle" checked></span>
-        <span class="toggle" style="font-size: 1.1rem;"><input type="checkbox" name="exampleToggle"></span>
-        <span class="toggle" style="font-size: 1.3rem;"><input type="checkbox" name="exampleToggle"></span>
-        <span class="toggle" style="font-size: 1.5rem;"><input type="checkbox" name="exampleToggle"></span>
-        <span class="toggle" style="font-size: 1.7rem;"><input type="checkbox" name="exampleToggle"></span>
+        <span class="toggle"><input type="checkbox" id="exampleToggle" checked></span>
+        <span class="toggle" style="font-size: 1.1rem;"><input type="checkbox" id="exampleToggle"></span>
+        <span class="toggle" style="font-size: 1.3rem;"><input type="checkbox" id="exampleToggle"></span>
+        <span class="toggle" style="font-size: 1.5rem;"><input type="checkbox" id="exampleToggle"></span>
+        <span class="toggle" style="font-size: 1.7rem;"><input type="checkbox" id="exampleToggle"></span>
       </p>
 
-<pre><code class="hljs language-xml"><span class="toggle"><input type="checkbox" name="exampleToggle"></span></code></pre>
+<pre><code class="hljs language-xml"><span class="toggle"><input type="checkbox" id="exampleToggle"></span></code></pre>
     </section>
 
     <!-- Accordion -->
     <section class="docs">
       <h6 class="docs-title">Accordion</h6>
-      <p>Accordion...</p>
+      <p>Wisp includes minimal, pure CSS accordion's using the <code>input:checked</code> method.</p>
+
+      <div class="accordion1">
+        <div class="accordion-tab">
+          <input type="checkbox" id="tab1" checked>
+          <label for="tab1">Checkbox</label>
+          <div class="accordion-content">
+            <p>Pure CSS accordion example.</p>
+          </div>
+        </div>
+        <div class="accordion-tab">
+          <input type="checkbox" id="tab2">
+          <label for="tab2">Open multiple</label>
+          <div class="accordion-content">
+            <p>Using <code>&lt;input type="checkbox"&gt;</code> allows you to have several tabs
+              open at the same time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion2">
+        <div class="accordion-tab">
+          <input type="radio" id="tab3" name="exampleRadio">
+          <label for="tab3">Radio</label>
+          <div class="accordion-content">
+            <p>If you want to have only one tab open, you can use <code>&lt;input type="radio"&gt;</code>.</p>
+          </div>
+        </div>
+        <div class="accordion-tab">
+          <input type="radio" id="tab4" name="exampleRadio">
+          <label for="tab4">One at a time</label>
+          <div class="accordion-content">
+            <p>Pure CSS accordion example.</p>
+          </div>
+        </div>
+        <div class="accordion-tab accordion-tab--close">
+          <input type="radio" id="closeTabs" name="exampleRadio">
+          <label for="closeTabs">&times; close open tab</label>
+        </div>
+      </div>
+
+<pre><code class="hljs language-xml"><div class="accordion">
+  <div class="accordion-tab">
+    <input type="checkbox" id="tab1" checked>
+    <label for="tab1">Checkbox</label>
+    <div class="accordion-content">
+      <p>Pure CSS accordion example.</p>
+    </div>
+  </div>
+  <div class="accordion-tab">
+    <input type="checkbox" id="tab2">
+    <label for="tab2">Open multiple</label>
+    <div class="accordion-content">
+      <p>Using <code>&lt;input type="checkbox"&gt;</code>
+        allows you to have several tabs open at the same time.</p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion">
+  <div class="accordion-tab">
+    <input type="radio" id="tab3" name="exampleRadio">
+    <label for="tab3">Radio</label>
+    <div class="accordion-content">
+      <p>If you want to have only one tab open, you can use
+        <code>&lt;input type="radio"&gt;</code>.</p>
+    </div>
+  </div>
+  <div class="accordion-tab">
+    <input type="radio" id="tab4" name="exampleRadio">
+    <label for="tab4">One at a time</label>
+    <div class="accordion-content">
+      <p>Pure CSS accordion example.</p>
+    </div>
+  </div>
+  <div class="accordion-tab accordion-tab--close">
+    <input type="radio" id="closeTabs" name="exampleRadio">
+    <label for="closeTabs">&times; close open tab</label>
+  </div>
+</div>
+</code></pre>
     </section>
 
     <!-- Lists -->
@@ -325,7 +405,7 @@
         appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a
         <code>&lt;pre&gt;</code>.</p>
 
-<pre><code class="docs-code">.some-class {
+<pre><code class="code_example">.block-element--modifier {
   background-color: red;
 }</code></pre>
 
@@ -422,8 +502,8 @@
     <section class="docs">
       <h6 class="docs-title">Utilities</h6>
       <p>Wisp includes the following <code>display</code> utility classes:</p>
-      <div class="docs-util">
-        <div class="docs-col">
+      <div class="util_example">
+        <div class="util_example-col">
           <ul>
             <li><code>.sm-hide</code>: Hide on screen sizes small and larger.</li>
             <li><code>.md-hide</code>: Hide on screen sizes medium and larger.</li>
@@ -432,7 +512,7 @@
             <li><code>.xxl-hide</code>: Hide on screen sizes 2xl and larger.</li>
           </ul>
         </div>
-        <div class="docs-col">
+        <div class="util_example-col">
           <ul>
             <li><code>.sm-show</code>: Show on screen sizes small and larger.</li>
             <li><code>.md-show</code>: Show on screen sizes medium and larger.</li>
