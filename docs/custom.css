@@ -54,6 +54,8 @@ pre {
 }
 
 
+/* Value Props
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .value {
   display: flex;
   text-align: center;
@@ -95,7 +97,7 @@ pre {
   letter-spacing: normal; }
 
 
-/* Examples
+/* Typography Example
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .type_example {
   display: flex; }
@@ -110,10 +112,14 @@ pre {
   color: var(--color-neutral-4); }
 
 
+/* Button Example
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .btn_example {
   text-align: center; }
 
 
+/* Form Example
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .form_example {
   margin-bottom: 10px; }
 
@@ -123,6 +129,8 @@ pre {
 }
 
 
+/* Accordion Example
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .accordion1 {
   margin-bottom: 45px; }
 .accordion2 {
@@ -132,14 +140,19 @@ pre {
   .accordion1,
   .accordion2 {
     max-width: 65%;
-    margin: 0 auto; }
+    margin-left: auto;
+    margin-right: auto; }
 }
 
 
+/* Code Example
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .code_example {
   margin-bottom: 5px; }
 
 
+/* Util Example
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (min-width: 910px) {
   .util_example {
     display: flex; }
