@@ -5,9 +5,7 @@
   <a href="https://github.com/Frazier-Software/wisp">
     <img src="private/logo.png" alt="Logo" width="254" height="258">
   </a>
-
-<h3 align="center">Wisp</h3>
-
+  <h3 align="center">Wisp</h3>
   <p align="center">
     A dead simple CSS boilerplate.
     <br />
