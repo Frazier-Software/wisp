@@ -1,5 +1,35 @@
 # Changelog
 
+## v2.0.0
+
+[compare changes](https://github.com/Frazier-Software/wisp/compare/v1...v2.0.0)
+
+### 🚀 Enhancements
+
+- Switch to modern-normalize v3.0.1 ([06af748](https://github.com/Frazier-Software/wisp/commit/06af748))
+
+### 💅 Refactors
+
+- Switched to standard CSS formatting ([7d0fedb](https://github.com/Frazier-Software/wisp/commit/7d0fedb))
+- ⚠️  Updated BEM naming convention ([14f0ad7](https://github.com/Frazier-Software/wisp/commit/14f0ad7))
+
+### 📖 Documentation
+
+- Updated doc css ([782365e](https://github.com/Frazier-Software/wisp/commit/782365e))
+
+### 🏡 Chore
+
+- CNAME file for github pages ([13102ba](https://github.com/Frazier-Software/wisp/commit/13102ba))
+- Updated the README ([c44f8a1](https://github.com/Frazier-Software/wisp/commit/c44f8a1))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Updated BEM naming convention ([14f0ad7](https://github.com/Frazier-Software/wisp/commit/14f0ad7))
+
+### ❤️ Contributors
+
+- Chris Frazier ([@chrisfrazier0](http://github.com/chrisfrazier0))
+
 ## v1.0.0
 
 ### 🚀 Enhancements
