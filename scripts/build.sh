@@ -12,7 +12,7 @@ banner="/*
 
 rm -rf dist
 mkdir -p dist
-minify src/wisp.css > dist/wisp.css.mini
+lightningcss src/wisp.css --minify -o dist/wisp.css.mini
 minify src/wisp.js > dist/wisp.js.mini
 
 echo "$banner" | cat "docs/normalize.css" - "dist/wisp.css.mini" > "dist/wisp.css"
