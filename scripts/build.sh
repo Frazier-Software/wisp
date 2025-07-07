@@ -10,6 +10,7 @@ banner="/*
  * Licensed under the ${npm_package_license} license
  */"
 
+rm -rf dist
 mkdir -p dist
 minify src/wisp.css > dist/wisp.css.mini
 minify src/wisp.js > dist/wisp.js.mini
