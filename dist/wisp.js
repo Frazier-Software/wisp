@@ -1,5 +1,5 @@
 /*
- * Wisp v2.0.0
+ * Wisp v2.0.1
  * https://wisp.frazier.software/
  *
  * Copyright (c) 2025 Chris Frazier

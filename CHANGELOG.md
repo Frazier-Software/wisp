@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.0.1
+
+[compare changes](https://github.com/Frazier-Software/wisp/compare/v2.0.0...v2.0.1)
+
+### 🩹 Fixes
+
+- Use ligntingcss to properly minify modern css ([6844455](https://github.com/Frazier-Software/wisp/commit/6844455))
+
+### ❤️ Contributors
+
+- Chris Frazier ([@chrisfrazier0](http://github.com/chrisfrazier0))
+
 ## v2.0.0
 
 [compare changes](https://github.com/Frazier-Software/wisp/compare/v1...v2.0.0)
