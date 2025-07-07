@@ -128,59 +128,59 @@ input[type="button"]:hover {
   outline: 0;
 }
 
-.btn.btn--primary,
-button.btn--primary,
-input[type="submit"].btn--primary,
-input[type="reset"].btn--primary,
-input[type="button"].btn--primary {
+.btn.btn\:primary,
+button.btn\:primary,
+input[type="submit"].btn\:primary,
+input[type="reset"].btn\:primary,
+input[type="button"].btn\:primary {
   color: var(--color-font-light);
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
 
-.btn.btn--primary:hover,
-button.btn--primary:hover,
-input[type="submit"].btn--primary:hover,
-input[type="reset"].btn--primary:hover,
-input[type="button"].btn--primary:hover {
+.btn.btn\:primary:hover,
+button.btn\:primary:hover,
+input[type="submit"].btn\:primary:hover,
+input[type="reset"].btn\:primary:hover,
+input[type="button"].btn\:primary:hover {
   color: var(--color-font-light);
   background-color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
-.btn.btn--warning,
-button.btn--warning,
-input[type="submit"].btn--warning,
-input[type="reset"].btn--warning,
-input[type="button"].btn--warning {
+.btn.btn\:warning,
+button.btn\:warning,
+input[type="submit"].btn\:warning,
+input[type="reset"].btn\:warning,
+input[type="button"].btn\:warning {
   color: var(--color-secondary-light);
   border-color: var(--color-secondary-light);
 }
 
-.btn.btn--warning:hover,
-button.btn--warning:hover,
-input[type="submit"].btn--warning:hover,
-input[type="reset"].btn--warning:hover,
-input[type="button"].btn--warning:hover {
+.btn.btn\:warning:hover,
+button.btn\:warning:hover,
+input[type="submit"].btn\:warning:hover,
+input[type="reset"].btn\:warning:hover,
+input[type="button"].btn\:warning:hover {
   color: var(--color-secondary-dark);
   border-color: var(--color-secondary-dark);
 }
 
-.btn.btn--danger,
-button.btn--danger,
-input[type="submit"].btn--danger,
-input[type="reset"].btn--danger,
-input[type="button"].btn--danger {
+.btn.btn\:danger,
+button.btn\:danger,
+input[type="submit"].btn\:danger,
+input[type="reset"].btn\:danger,
+input[type="button"].btn\:danger {
   color: var(--color-font-light);
   background: var(--color-secondary-light);
   border-color: var(--color-secondary-light);
 }
 
-.btn.btn--danger:hover,
-button.btn--danger:hover,
-input[type="submit"].btn--danger:hover,
-input[type="reset"].btn--danger:hover,
-input[type="button"].btn--danger:hover {
+.btn.btn\:danger:hover,
+button.btn\:danger:hover,
+input[type="submit"].btn\:danger:hover,
+input[type="reset"].btn\:danger:hover,
+input[type="button"].btn\:danger:hover {
   background: var(--color-secondary);
   border-color: var(--color-secondary);
 }
@@ -188,7 +188,7 @@ input[type="button"].btn--danger:hover {
 
 /* Button Ripple Effect
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.btn--ripple {
+.btn\:ripple {
   position: relative;
   overflow: hidden;
 
@@ -362,17 +362,17 @@ label > .label-body {
     cursor: pointer;
   }
 
-  &.accordion-tab--close {
+  &.accordion-tab\:close {
     border: none;
     margin-top: 12px;
   }
 
-  &.accordion-tab--close label {
+  &.accordion-tab\:close label {
     font-size: 75%;
     padding: 0 0 0 10px;
   }
 
-  &:not(.accordion-tab--close) label::after {
+  &:not(.accordion-tab\:close) label::after {
     content: "\276F";
     color: var(--color-neutral-5);
     width: 1em;
@@ -380,7 +380,7 @@ label > .label-body {
     text-align: center;
   }
 
-  &:not(.accordion-tab--close) input:checked + label::after {
+  &:not(.accordion-tab\:close) input:checked + label::after {
     transform: rotate(90deg);
   }
 }
@@ -531,7 +531,7 @@ td:last-child {
   transition: all .65s cubic-bezier(.84,-0.18,.31,1.26);
 }
 
-.tooltip.tooltip--sm::after {
+.tooltip.tooltip\:sm::after {
   font-size: .75em;
   margin-left: -5em;
   width: 10em;
@@ -614,7 +614,7 @@ hr {
     background-color: var(--color-primary);
   }
 
-  &.back-to-top--show {
+  &.back-to-top\:show {
     opacity: 1;
     visibility: visible;
   }

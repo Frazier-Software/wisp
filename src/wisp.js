@@ -16,9 +16,9 @@ function createRipple(event) {
 function handleScroll(btt) {
   return function () {
     if (document.documentElement.scrollTop > 300) {
-      btt.classList.add('back-to-top--show');
+      btt.classList.add('back-to-top:show');
     } else {
-      btt.classList.remove('back-to-top--show');
+      btt.classList.remove('back-to-top:show');
     }
   };
 }
@@ -36,7 +36,7 @@ const ready = cb => {
 };
 
 ready(() => {
-  document.querySelectorAll('.btn--ripple').forEach(el => {
+  document.querySelectorAll('.btn\\:ripple').forEach(el => {
     el.addEventListener('click', createRipple);
   });
 

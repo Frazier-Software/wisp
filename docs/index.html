@@ -43,7 +43,7 @@
     <header class="header">
       <img class="header-img" src="imgs/wisp.webp" alt="Wisp, simple CSS boilerplate.">
       <h2>A dead simple CSS boilerplate.</h2>
-      <a class="btn btn--primary btn--ripple" href="https://unpkg.com/@fraziersoft/wisp@latest/dist/wisp.css">Download</a>
+      <a class="btn btn:primary btn:ripple" href="https://unpkg.com/@fraziersoft/wisp@latest/dist/wisp.css">Download</a>
     </header>
 
     <!-- Value Props -->
@@ -99,7 +99,8 @@
   --color-neutral-6: #333;
 
   --font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --border-radius: 4px; }
+  --border-radius: 4px;
+}
 </code></pre>
     </section>
 
@@ -155,20 +156,20 @@
     <section class="docs">
       <h6 class="docs-title">Buttons</h6>
       <p>Buttons come in four basic flavors in Wisp. The standard <code>.btn</code> element is
-        plain, whereas the <code>.btn--primary</code> button is vibrant and prominent. The
-        <code>.btn--warning</code> element is a light version of the secondary color, and the
-        <code>.btn--danger</code> element is a bright version of the secondary color. Button
+        plain, whereas the <code>.btn:primary</code> button is vibrant and prominent. The
+        <code>.btn:warning</code> element is a light version of the secondary color, and the
+        <code>.btn:danger</code> element is a bright version of the secondary color. Button
         styles are applied to a number of appropriate form elements, but can also be arbitrarily
         attached to anchors with a <code>.btn</code> class.</p>
 
       <div class="md-hide btn_example">
         <div>
           <a class="btn" href="#">Anchor button</a>
-          <a class="btn btn--primary" href="#">Anchor button</a>
+          <a class="btn btn:primary" href="#">Anchor button</a>
         </div>
         <div>
-          <a class="btn btn--warning" href="#">Anchor button</a>
-          <a class="btn btn--danger" href="#">Anchor button</a>
+          <a class="btn btn:warning" href="#">Anchor button</a>
+          <a class="btn btn:danger" href="#">Anchor button</a>
         </div>
       </div>
       <div class="md-show">
@@ -179,22 +180,22 @@
           <input type="button" value="Button input">
         </div>
         <div>
-          <a class="btn btn--primary" href="#">Anchor button</a>
-          <button class="btn--primary">Button element</button>
-          <input class="btn--primary" type="submit" value="Submit input">
-          <input class="btn--primary" type="button" value="Button input">
+          <a class="btn btn:primary" href="#">Anchor button</a>
+          <button class="btn:primary">Button element</button>
+          <input class="btn:primary" type="submit" value="Submit input">
+          <input class="btn:primary" type="button" value="Button input">
         </div>
         <div>
-          <a class="btn btn--warning" href="#">Anchor button</a>
-          <button class="btn--warning">Button element</button>
-          <input class="btn--warning" type="submit" value="Submit input">
-          <input class="btn--warning" type="button" value="Button input">
+          <a class="btn btn:warning" href="#">Anchor button</a>
+          <button class="btn:warning">Button element</button>
+          <input class="btn:warning" type="submit" value="Submit input">
+          <input class="btn:warning" type="button" value="Button input">
         </div>
         <div>
-          <a class="btn btn--danger" href="#">Anchor button</a>
-          <button class="btn--danger">Button element</button>
-          <input class="btn--danger" type="submit" value="Submit input">
-          <input class="btn--danger" type="button" value="Button input">
+          <a class="btn btn:danger" href="#">Anchor button</a>
+          <button class="btn:danger">Button element</button>
+          <input class="btn:danger" type="submit" value="Submit input">
+          <input class="btn:danger" type="button" value="Button input">
         </div>
       </div>
 
@@ -205,22 +206,22 @@
 <input type="button" value="Button input">
 
 <!-- Primary buttons -->
-<a class="btn btn--primary" href="#">Anchor button</a>
-<button class="btn--primary">Button element</button>
-<input class="btn--primary" type="submit" value="Submit input">
-<input class="btn--primary" type="button" value="Button input">
+<a class="btn btn:primary" href="#">Anchor button</a>
+<button class="btn:primary">Button element</button>
+<input class="btn:primary" type="submit" value="Submit input">
+<input class="btn:primary" type="button" value="Button input">
 
 <!-- Warning buttons -->
-<a class="btn btn--warning" href="#">Anchor button</a>
-<button class="btn--warning">Button element</button>
-<input class="btn--warning" type="submit" value="Submit input">
-<input class="btn--warning" type="button" value="Button input">
+<a class="btn btn:warning" href="#">Anchor button</a>
+<button class="btn:warning">Button element</button>
+<input class="btn:warning" type="submit" value="Submit input">
+<input class="btn:warning" type="button" value="Button input">
 
 <!-- Danger buttons -->
-<a class="btn btn--danger" href="#">Anchor button</a>
-<button class="btn--danger">Button element</button>
-<input class="btn--danger" type="submit" value="Submit input">
-<input class="btn--danger" type="button" value="Button input">
+<a class="btn btn:danger" href="#">Anchor button</a>
+<button class="btn:danger">Button element</button>
+<input class="btn:danger" type="submit" value="Submit input">
+<input class="btn:danger" type="button" value="Button input">
 </code></pre>
     </section>
 
@@ -250,7 +251,7 @@
           <span class="label-body">Send a copy to yourself</span>
         </label>
 
-        <input class="btn--primary" type="submit" value="Submit">
+        <input class="btn:primary" type="submit" value="Submit">
       </form>
 
 <pre><code class="hljs language-xml"><!-- The above form looks like this -->
@@ -274,7 +275,7 @@
     <span class="label-body">Send a copy to yourself</span>
   </label>
 
-  <input class="btn--primary" type="submit" value="Submit">
+  <input class="btn:primary" type="submit" value="Submit">
 </form>
 <!-- NOTE: Always wrap checkbox and radio inputs in a label and use
   <span class="label-body"> inside of it -->
@@ -337,7 +338,7 @@
             <p>Pure CSS accordion example.</p>
           </div>
         </div>
-        <div class="accordion-tab accordion-tab--close">
+        <div class="accordion-tab accordion-tab:close">
           <input type="radio" id="closeTabs" name="exampleRadio">
           <label for="closeTabs">&times; close open tab</label>
         </div>
@@ -377,7 +378,7 @@
       <p>Pure CSS accordion example.</p>
     </div>
   </div>
-  <div class="accordion-tab accordion-tab--close">
+  <div class="accordion-tab accordion-tab:close">
     <input type="radio" id="closeTabs" name="exampleRadio">
     <label for="closeTabs">&times; close open tab</label>
   </div>
@@ -417,7 +418,7 @@
         appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a
         <code>&lt;pre&gt;</code>.</p>
 
-<pre><code class="code_example">.block-element--modifier {
+<pre><code class="code_example">.block-element:modifier {
   background-color: red;
 }</code></pre>
 
@@ -490,10 +491,10 @@
         <span class="tooltip" data-tip="These tooltips work without any Javascript. They are triggered on hover and focus.">tooltips (hover me)</span>
         to almost any inline element by adding the <code>.tooltip</code> class and specifying some data via
         <code>data-tip</code>. The tooltips scale down automatically on small devices, but if you prefer using the
-        <span class="tooltip tooltip--sm" data-tip="This tooltip uses the .tooltip--sm modifier">small size</span>
-        you can force it with the <code>.tooltip--sm</code> modifier.</p>
+        <span class="tooltip tooltip:sm" data-tip="This tooltip uses the .tooltip:sm modifier">small size</span>
+        you can force it with the <code>.tooltip:sm</code> modifier.</p>
 <pre><code class="hljs language-xml"><span class="tooltip" data-tip="These tooltips work without any Javascript. They are triggered on hover and focus.">tooltips</span>
-<span class="tooltip tooltip--sm" data-tip="This tooltip uses the .tooltip--sm modifier">small size</span>
+<span class="tooltip tooltip:sm" data-tip="This tooltip uses the .tooltip:sm modifier">small size</span>
 </code></pre>
     </section>
 
@@ -557,9 +558,9 @@
         file as well. Specifically, button ripple effects, and the back-to-top button.</p>
 
       <ul>
-        <li>Ripple effect: <a class="btn btn--primary btn--ripple u-mb0" href="#" onclick="return false">Ripple button</a></li>
+        <li>Ripple effect: <a class="btn btn:primary btn:ripple u-mb0" href="#" onclick="return false">Ripple button</a></li>
         <ul>
-          <li>Add <code>.btn .btn--ripple</code> to a button or anchor.</li>
+          <li>Add <code>.btn .btn:ripple</code> to a button or anchor.</li>
         </ul>
         <li>Back-to-top (see page for demo)</li>
         <ul>
