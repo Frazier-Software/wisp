@@ -15,7 +15,8 @@ mkdir -p dist
 minify src/wisp.css > dist/wisp.css.mini
 minify src/wisp.js > dist/wisp.js.mini
 
-for file in dist/*.mini; do
-  echo "$banner" | cat - "$file" > "${file%.mini}"
-  rm -f "$file"
-done
+echo "$banner" | cat "docs/normalize.css" - "dist/wisp.css.mini" > "dist/wisp.css"
+rm -f "dist/wisp.css.mini"
+
+echo "$banner" | cat - "dist/wisp.js.mini" > "dist/wisp.js"
+rm -f "dist/wisp.js.mini"
